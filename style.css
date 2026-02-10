@@ -43,3 +43,12 @@
      rgba(255, 107, 129, 0.5);
 }
 
+.hidden-screens {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
