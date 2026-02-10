@@ -1,13 +1,13 @@
 /* Estilos extraídos de la imagen */
 .question-container {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transition: 0.2s;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
 }
 
 .local-gif {
@@ -20,8 +20,8 @@
 }
 
 .question {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
    
 }
 
