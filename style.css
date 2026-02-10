@@ -1,12 +1,15 @@
-/* Estilos extraídos de la imagen */
-.question-container {
+/* Contenedor principal */
+.container {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrado real */
+    transform: translate(-50%, -50%);
+    text-align: center;
     transition: 0.2s;
+    width: 100%;
 }
 
+/* GIFs */
 .local-gif {
     width: 100%;
     max-width: 300px;
@@ -16,20 +19,21 @@
     pointer-events: none;
 }
 
+/* Texto */
 .question {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
-.button-container {
+/* Botones */
+.button-group {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    position: relative;
 }
 
 .btn {
-    position: absolute; /* Importante para que el 'No' se mueva */
     border: none;
     border-radius: 50px;
     padding: 14px 24px;
@@ -46,8 +50,14 @@
     transform: scale(1.05);
 }
 
-.hidden-screens {
-    display: none;
+/* Pantallas ocultas */
+.hidden {
+    display: none !important;
+}
+
+/* Loading y final */
+#loading-screen,
+#final-screen {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,6 +66,6 @@
     width: 100%;
 }
 
-.hidden{
-    display: none !important;
+#noBtn {
+    position: relative;
 }
