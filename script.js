@@ -5,14 +5,13 @@ const loadingScreen = document.getElementById('loading-screen');
 const finalScreen = document.getElementById('final-screen');
 
 noBtn.addEventListener('mouseover', () => {
-    // Definimos un margen para que no se pegue al borde exacto
-    const padding = 10; 
+    // En cuanto intentan tocarlo, se vuelve absoluto para poder moverse
+    noBtn.style.position = 'absolute';
     
-    // Calculamos el espacio disponible restando el tamaño del botón y el margen
+    const padding = 20;
     const maxX = window.innerWidth - noBtn.offsetWidth - padding;
     const maxY = window.innerHeight - noBtn.offsetHeight - padding;
 
-    // Generamos la posición asegurándonos de que sea al menos igual al margen
     const randomX = Math.max(padding, Math.floor(Math.random() * maxX));
     const randomY = Math.max(padding, Math.floor(Math.random() * maxY));
 
