@@ -11,7 +11,7 @@ noBtn.addEventListener('mouseover', () => {
 });
 
 // Transición de pantallas al pulsar "Sí"
-yesBtn.addEventListener('click', () => {
+document.getElementById('yesBtn').addEventListener('click', () => {
     document.getElementById('question-container').classList.add('hidden');
     document.getElementById('loading-screen').classList.remove('hidden');
 
