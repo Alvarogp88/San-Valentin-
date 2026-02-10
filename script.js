@@ -6,7 +6,7 @@ const finalScreen = document.getElementById('final-screen');
 
 noBtn.addEventListener('mouseover', () => {
     // Definimos un margen para que no se pegue al borde exacto
-    const padding = 20; 
+    const padding = 10; 
     
     // Calculamos el espacio disponible restando el tamaño del botón y el margen
     const maxX = window.innerWidth - noBtn.offsetWidth - padding;
