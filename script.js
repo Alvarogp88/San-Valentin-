@@ -5,7 +5,7 @@ const yesBtn = document.getElementById('yesBtn');
 noBtn.addEventListener('mouseover', () => {
     noBtn.style.position = 'fixed';
 
-    const range = 150; // distancia máxima que puede alejarse
+    const range = 300; // distancia máxima que puede alejarse
 
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
