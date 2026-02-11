@@ -3,7 +3,7 @@ const yesBtn = document.getElementById('yesBtn');
 
 // Botón "No" huye
 noBtn.addEventListener('mouseover', () => {
-    const margin = 100; 
+    const margin = 300; 
     const x = Math.random() * (window.innerWidth - noBtn.offsetWidth - margin * 2) + margin;
     const y = Math.random() * (window.innerHeight - noBtn.offsetHeight - margin * 2) + margin;
     noBtn.style.left = `${x}px`;
