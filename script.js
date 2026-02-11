@@ -3,9 +3,16 @@ const yesBtn = document.getElementById('yesBtn');
 
 // Botón "No" huye
 noBtn.addEventListener('mouseover', () => {
-    const margin = 300; 
-    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth - margin * 2) + margin;
-    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight - margin * 2) + margin;
+    noBtn.style.position = 'fixed';
+
+    const range = 150; // distancia máxima que puede alejarse
+
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
+    const x = centerX + (Math.random() - 0.5) * range;
+    const y = centerY + (Math.random() - 0.5) * range;
+
     noBtn.style.left = `${x}px`;
     noBtn.style.top = `${y}px`;
 });
